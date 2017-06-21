@@ -23,7 +23,7 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "",
+    "build": "./node_modules/.bin/webpack --config server.webpack.config.js && ./node_modules/.bin/webpack --config webpack.config.js",
     "app": "./dist/compiled-server.js",
     "watch": "nodemon ./dist/compiled-server.js"
   },

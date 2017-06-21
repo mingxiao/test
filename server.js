@@ -7,7 +7,17 @@ var app = express();
 import React from 'react';
 import ReactDOMServer from 'react-dom/server';
 
+app.get('/dist/:file', function(req, res) {
+  const file = req.params['file'];
+  const filepath = `${process.cwd()}/dist/${file}`;
+
+  console.log(`Routing request ${file} to ${filepath}`);
+
+  res.sendFile(filepath);
+});
+
 app.get('/', function (req, res) {
+  console.log('hit home');
   res.send(render())
 });
 console.log(`listening on port 3000`);
