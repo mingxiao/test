@@ -6,6 +6,8 @@
   "dependencies": {
     "babel": "^6.23.0",
     "babel-preset-react": "^6.24.1",
+    "concurrently": "^3.4.0",
+    "nodemon": "^1.11.0",
     "react": "^15.6.1",
     "react-dom": "^15.6.1"
   },
@@ -20,7 +22,10 @@
     "webpack": "^2.6.1"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "",
+    "app": "./dist/compiled-server.js",
+    "watch": "nodemon ./dist/compiled-server.js"
   },
   "author": "",
   "license": "ISC"
