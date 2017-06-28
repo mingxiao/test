@@ -17,6 +17,10 @@ module.exports = {
             presets: ['env', 'react']
           }
         }
+      },
+      {
+        test:/\.s?css$/,
+        loader: 'css-loader!sass-loader'
       }
     ]
   },

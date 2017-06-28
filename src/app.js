@@ -1,9 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import {DefaultButton, PrimaryButton, DangerButton, BrandButton} from 'pui-react-buttons';
+
 
 class App extends React.Component{
   render() {
-    return (<div>foo</div>);
+    return (<div>
+      <DefaultButton > Button </DefaultButton>
+      foo</div>);
   }
 }
 

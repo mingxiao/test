@@ -26,6 +26,9 @@ app.listen(3000);
 function render() {
   return ReactDOMServer.renderToString(
     <html>
+      <head>
+        <link href="./dist/app.css" type="text/css" rel="stylesheet"/>
+      </head>
       <body>
         <div id="root">
         </div>
