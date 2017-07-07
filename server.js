@@ -3,7 +3,6 @@
  */
 import express from 'express';
 var app = express();
-// var React = require('react');
 import React from 'react';
 import ReactDOMServer from 'react-dom/server';
 
