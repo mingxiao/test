@@ -1,6 +1,3 @@
-/**
- * Created by pivotal on 6/7/17.
- */
 var path = require('path');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 
@@ -21,6 +18,10 @@ module.exports = {
             presets: ['env', 'react', 'es2015']
           }
         }
+      },
+      {
+        test: /\.(eot|ttf|woff)$/,
+        loader: 'url-loader'
       },
       {
         test: /\.s?css$/,

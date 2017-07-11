@@ -1,14 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-// import {DefaultButton, PrimaryButton, DangerButton, BrandButton} from 'pui-react-buttons';
+import {DefaultButton} from 'pui-react-buttons';
 require("./test.css");
 
-class App extends React.Component{
+class App extends React.Component {
   render() {
-    return (<div className="test">
-      foo
-      bar
-    </div>);
+    return (
+      <div className="test">
+        foo
+        bar
+        <DefaultButton>Default</DefaultButton>
+      </div>
+    );
   }
 }
 
