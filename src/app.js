@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import {DefaultButton} from 'pui-react-buttons';
+import {Icon} from 'pui-react-iconography';
 require("./test.css");
 
 class App extends React.Component {
@@ -10,6 +11,7 @@ class App extends React.Component {
         foo
         bar
         <DefaultButton>Default</DefaultButton>
+        <Icon src="add"/>
       </div>
     );
   }
