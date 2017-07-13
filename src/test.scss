@@ -1,0 +1,26 @@
+.test {
+    border: 1px solid red;
+    display: flex;
+    justify-content: flex-start;
+    width: 200px;
+
+    .child {
+        margin: auto;  /* Magic! */
+    }
+
+    .foo {
+        width: 20px;
+        height: 30px;
+    }
+
+    .bar {
+        width: 50px;
+        height: 30px;
+    }
+
+    .default {
+        width: 50px;
+        height: 50px;
+        flex-grow: 2;
+    }
+}
