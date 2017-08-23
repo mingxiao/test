@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import {DefaultButton} from 'pui-react-buttons';
 import {Icon} from 'pui-react-iconography';
+import Header from './components/header';
 require("./test.scss");
 
 class App extends React.Component {
@@ -12,6 +13,7 @@ class App extends React.Component {
         <div className="bar child">bar</div>
         <DefaultButton className="default child">Default</DefaultButton>
         <Icon className="child icon" src="add"/>
+        <Header />
       </div>
     );
   }
